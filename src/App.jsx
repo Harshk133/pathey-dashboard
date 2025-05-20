@@ -81,7 +81,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AppointmentOverview from "./pages/AppointmentOverview";
 import HeroSectionOverview from "./pages/HeroSectionOverview";
-import DashboardHome from "./pages/DashBoardHome";
+import DashboardHome from "./pages/DashboardHome";
 import UsersDashboard from "./pages/UserDashboard";
 import { createTheme, ThemeProvider } from "@mui/material";
 import { useState } from "react";
@@ -92,10 +92,6 @@ import Course from "./pages/Course";
 import UpdateCourseForm from "./pages/UpdateCourseForm";
 import Contact from "./pages/Contact";
 
-// const ProtectedRoute = ({ children }) => {
-//   const token = localStorage.getItem("admin-token");
-//   return token ? children : <Navigate to="/login" />;
-// };
 
 const ProtectedRoute = ({ redirectPath = "/login", children }) => {
   const token = localStorage.getItem("admin-token");
